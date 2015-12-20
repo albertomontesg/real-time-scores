@@ -6,7 +6,7 @@ web:
     container_name: live_scores
     build: .
     restart: always
-    command: python manage.py runserver 0.0.0.0:8000
+    command: /usr/bin/supervisord -c /code/deployment/supervisord.conf
     volumes:
         - .:/code
     ports:

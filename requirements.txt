@@ -1,4 +1,7 @@
+celery
 Django
+django-celery
+facebook-sdk
+kombu
 psycopg2
 tweepy
-facebook-sdk

@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djcelery',
+    'kombu.transport.django',
     'information',
 ]
 
@@ -123,6 +125,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+### CELERY
+BROKER_URL = 'django://'
+CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
+CELERY_ACCEPT_CONTENT = ['pickle']
+CELERY_TASK_SERIALIZER = 'pickle'
+CELERY_RESULT_SERIALIZER = 'pickle'
+CELERYD_HIJACK_ROOT_LOGGER = False
+TEST_RUNNER = 'djcelery.contrib.test_runner.CeleryTestSuiteRunner'
+
+#SCHEDULED TASKS
+CELERY_TIMEZONE = 'UTC'
+
 
 FCB_COMPETITIONS_URL = 'http://www.basquetcatala.cat/competicions/resultats/'
 FCB_MATCHES_URL = 'http://www.basquetcatala.cat/partits/llistatpartits/'
