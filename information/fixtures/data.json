@@ -3,7 +3,8 @@
         "fields": {
             "name": "Sènior A",
             "gender": "Masculí",
-            "url_id": "04010103-1"
+            "url_id": "04010103-1",
+            "num_matches": "30"
         },
         "pk": 1,
         "model": "information.team"
@@ -187,6 +188,5 @@
         },
         "pk": 20,
         "model": "information.team"
-    },
-
+    }
 ]
