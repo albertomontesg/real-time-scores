@@ -1,0 +1,16 @@
+db:
+    container_name: live_scores_db
+    image: postgres
+    restart: always
+web:
+    container_name: live_scores
+    build: .
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+        - .:/code
+    ports:
+        - "8000:8000"
+    links:
+        - db
+    tty: true
