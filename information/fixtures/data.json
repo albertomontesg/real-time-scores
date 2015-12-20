@@ -1,0 +1,192 @@
+[
+    {
+        "fields": {
+            "name": "Sènior A",
+            "gender": "Masculí",
+            "url_id": "04010103-1"
+        },
+        "pk": 1,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Sènior B",
+            "gender": "Masculí",
+            "url_id": "04310103-1"
+        },
+        "pk": 2,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Júnior",
+            "gender": "Masculí",
+            "url_id": "09520102-2"
+        },
+        "pk": 3,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Cadet",
+            "gender": "Masculí",
+            "url_id": "15220312-2"
+        },
+        "pk": 4,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Infantil",
+            "gender": "Masculí",
+            "url_id": "16620201-2"
+        },
+        "pk": 5,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Pre-Infantil",
+            "gender": "Masculí",
+            "url_id": "17120306-2"
+        },
+        "pk": 5,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Mini Negre",
+            "gender": "Masculí",
+            "url_id": "18120105-2"
+        },
+        "pk": 6,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Mini Verd",
+            "gender": "Masculí",
+            "url_id": "18120314-2"
+        },
+        "pk": 7,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Pre-Mini Negre",
+            "gender": "Masculí",
+            "url_id": ""
+        },
+        "pk": 8,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Pre-Mini Verd",
+            "gender": "Masculí",
+            "url_id": ""
+        },
+        "pk": 9,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Sènior",
+            "gender": "Femení",
+            "url_id": "08310001-1"
+        },
+        "pk": 10,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Júnior",
+            "gender": "Femení",
+            "url_id": "08310001-1"
+        },
+        "pk": 11,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Cadet A",
+            "gender": "Femení",
+            "url_id": "25220104-2"
+        },
+        "pk": 12,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Cadet B",
+            "gender": "Femení",
+            "url_id": "25220202-2"
+        },
+        "pk": 13,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Cadet C",
+            "gender": "Femení",
+            "url_id": "25220402-2"
+        },
+        "pk": 14,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Infantil",
+            "gender": "Femení",
+            "url_id": ""
+        },
+        "pk": 15,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Pre-Infantil",
+            "gender": "Femení",
+            "url_id": ""
+        },
+        "pk": 16,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Mini Negre",
+            "gender": "Femení",
+            "url_id": ""
+        },
+        "pk": 17,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Mini Verd",
+            "gender": "Femení",
+            "url_id": ""
+        },
+        "pk": 18,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Mini Vermell",
+            "gender": "Femení",
+            "url_id": ""
+        },
+        "pk": 19,
+        "model": "information.team"
+    },
+    {
+        "fields": {
+            "name": "Pre-Mini Negre",
+            "gender": "Femení",
+            "url_id": ""
+        },
+        "pk": 20,
+        "model": "information.team"
+    },
+
+]

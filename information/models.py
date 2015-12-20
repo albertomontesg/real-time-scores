@@ -18,3 +18,6 @@ class Team(Model):
 
     def full_name(self):
         return self.name + ' ' + self.gender
+
+    def has_url(self):
+        return self.url_id != ''
