@@ -125,3 +125,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 FCB_COMPETITIONS_URL = 'http://www.basquetcatala.cat/competicions/resultats/'
+FCB_MATCHES_URL = 'http://www.basquetcatala.cat/partits/llistatpartits/'

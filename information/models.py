@@ -1,15 +1,15 @@
-from django.db.models import Model, CharField
+from django.db import models
 from django.conf import settings
 
-class Team(Model):
+class Team(models.Model):
     GENDERS = (
         ('M', u'Masculí'),
         ('F', u'Femení')
     )
 
-    name = CharField(max_length=100, blank=False)
-    gender = CharField(max_length=10, choices=GENDERS, default='M')
-    url_id = CharField(max_length=100, blank=True)
+    name = models.CharField(max_length=100, blank=False)
+    gender = models.CharField(max_length=10, choices=GENDERS, default='M')
+    url_id = models.CharField(max_length=100, blank=True)
 
     def get_url(self, day):
         ' The day is "jornada"'
@@ -21,3 +21,18 @@ class Team(Model):
 
     def has_url(self):
         return self.url_id != ''
+
+class Match(models.Model):
+    team = models.ForeignKey('Team')
+    opponent = models.CharField(max_length=50, blank=False)
+    datetime = models.DateTimeField()
+    local = models.BooleanField(default=True)
+    local_score = models.IntegerField()
+    visitant_score = models.IntegerField()
+    url_id = models.CharField(max_length=50, blank=False)
+
+    def get_url(self):
+        return settings.FCB_MATCHES_URL + self.url_id
+
+    def get_score(self):
+        return str(local_score) + '-' + str(visitant_score)
