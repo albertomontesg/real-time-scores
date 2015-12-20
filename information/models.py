@@ -10,6 +10,7 @@ class Team(models.Model):
     name = models.CharField(max_length=100, blank=False)
     gender = models.CharField(max_length=10, choices=GENDERS, default='M')
     url_id = models.CharField(max_length=100, blank=True)
+    num_matches = models.IntegerField(default=0)
 
     def get_url(self, day):
         ' The day is "jornada"'
@@ -24,6 +25,7 @@ class Team(models.Model):
 
 class Match(models.Model):
     team = models.ForeignKey('Team')
+    game_num = models.IntegerField(default=0)
     opponent = models.CharField(max_length=50, blank=False)
     datetime = models.DateTimeField()
     local = models.BooleanField(default=True)
